@@ -6,6 +6,10 @@
 *  This file is copyright under the latest version of the EUPL.
 *  Please see LICENSE file for your rights under this license. */
 
+// For those having problem during this step (when spaces or whitespaces exist), rare but happened to me time ago
+// uncomment line below (experimental)
+// $serverName = trim($_SERVER["SERVER_NAME"]);
+
 // Sanitize SERVER_NAME output
 $serverName = htmlspecialchars($_SERVER["SERVER_NAME"]);
 // Remove external ipv6 brackets if any
